@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Voice Selfie App</title>
+  </head>
+  <body>
+    <a href="" id="selfie_image" download="selfie.png"></a>
+    <div class="container">
+      <center>
+        <h1>
+          Voice Selfie App
+          <img
+            src="https://cdn2.cloudpro.co.uk/sites/cloudprod7/files/styles/thumbnail_large_620x350/public/2020/04/shutterstock_artificial_intelligence_ai.jpg?itok=_EWbQnkc"
+          />
+        </h1>
+        <hr />
+        <h4 style="color: red">
+          Please click on Allow as soon as the popup appears
+        </h4>
+        <div class="form-group">
+          <h3>Say: "Take my Selfie"</h3>
+          <label>Your Voice output:</label>
+          <textarea
+            id="textarea1"
+            readonly="true"
+            class="form-control"
+          ></textarea>
+          <button class="btn btn-info btn-lg" onclick="start()">Start</button>
+          <p class="text-info">Click on the button to start</p>
+          <label>Your Webcam:</label>
+          <div id="output"></div>
+          <br />
+          <label>Your Selfie:</label>
+          <div id="result"></div>
+        </div>
+      </center>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
